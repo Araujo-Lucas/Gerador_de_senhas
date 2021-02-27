@@ -1,0 +1,77 @@
+*{
+    /* box sizing = considera apenas as dimenções do conteudo, compensando o pedding e o margin */
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: 'Montserrat';
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.senha-container{
+    background-color: rgb(46,12,80);
+    min-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.senha-header{
+    padding: 1rem;
+}
+.senha{
+    width: 100%;
+    height: 70px;
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.37rem;
+    padding: 1rem;
+}
+.senha button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 265px;
+    border: none;
+    color: white;
+    background-color: rgb(174, 156, 192);
+    padding: 0.25rem 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    transition: opacity 0.1s ease;
+    opacity: 0;
+    cursor: pointer;
+}
+.senha:hover button{
+    opacity: 1;
+}
+
+.senha-body{
+    padding: 0.2rem 1rem 1rem;
+}
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+    color: #eee;
+}
+
+.generate{
+    background-color: rgb(174, 156, 192);
+    color: rebeccapurple;
+    border: none;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    width: 100%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
